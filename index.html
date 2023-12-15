@@ -20,7 +20,6 @@
   </form>
 
   <div id="result">
-    <!-- Display the calculated values here -->
   </div>
 
   <script>
@@ -28,10 +27,8 @@
       const basicSalary = parseFloat(document.getElementById('basicSalary').value);
       const benefits = parseFloat(document.getElementById('benefits').value);
 
-      // Call the calculateNetSalary function (you can replace it with your actual function)
       const salaryDetails = calculateNetSalary(basicSalary, benefits);
 
-      // Display the calculated values
       document.getElementById('result').innerHTML = `
         <h2>Salary Details</h2>
         <p>Gross Salary: ${salaryDetails.grossSalary}</p>
@@ -42,12 +39,8 @@
       `;
     }
 
-    // Your calculateNetSalary function goes here
     function calculateNetSalary(basicSalary, benefits) {
-      // Implement your calculation logic here
-      // ...
-
-      // For example, return some dummy values
+     
       return {
         grossSalary: basicSalary + benefits,
         payee: 0,
